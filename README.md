@@ -17,7 +17,7 @@ This framework helps you get better results from Claude Code by:
 
 ```bash
 # Clone into your project (or copy the files)
-git clone https://github.com/YOUR_USERNAME/context-engineering-setup.git
+git clone https://github.com/felcheck/context-engineering-setup.git
 cd context-engineering-setup
 ```
 
