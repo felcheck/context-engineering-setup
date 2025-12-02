@@ -60,9 +60,9 @@ Edit these sections if your project has specific conventions:
 You now have three slash commands available in Claude Code:
 
 ```
-/project:research <issue description>
-/project:plan <issue description>
-/project:implement <plan file or description>
+/research <issue description>
+/plan <issue description>
+/implement <plan file or description>
 ```
 
 ---
@@ -93,9 +93,9 @@ your-project/
 Skip research, go straight to plan → implement:
 
 ```
-You: /project:plan Add validation for email field in signup form
+You: /plan Add validation for email field in signup form
      ... review the plan ...
-You: /project:implement thoughts/shared/plans/email-validation.md
+You: /implement thoughts/shared/plans/email-validation.md
 ```
 
 ### For Complex Tasks (> 30 min or unfamiliar code)
@@ -104,17 +104,17 @@ Full workflow:
 
 ```
 1. RESEARCH
-   You: /project:research Why does the payment flow fail silently on timeout?
+   You: /research Why does the payment flow fail silently on timeout?
    ... Claude creates thoughts/shared/research/payment-timeout.md ...
    ... YOU REVIEW the research doc ...
 
 2. PLAN
-   You: /project:plan Fix payment timeout issue (see research)
+   You: /plan Fix payment timeout issue (see research)
    ... Claude creates thoughts/shared/plans/payment-timeout.md ...
    ... YOU REVIEW the plan ...
 
 3. IMPLEMENT
-   You: /project:implement thoughts/shared/plans/payment-timeout.md
+   You: /implement thoughts/shared/plans/payment-timeout.md
    ... Claude executes phase by phase with TDD ...
 ```
 
@@ -193,7 +193,7 @@ Where to focus your human attention:
 ### 1. Start with Research
 
 ```
-You: /project:research Users report "undefined" showing in profile name field
+You: /research Users report "undefined" showing in profile name field
 ```
 
 Claude creates `thoughts/shared/research/profile-undefined-bug.md`:
@@ -224,7 +224,7 @@ Users see "undefined" in the profile name field after updating their profile.
 ### 2. Create Plan
 
 ```
-You: /project:plan Fix profile undefined bug per research
+You: /plan Fix profile undefined bug per research
 ```
 
 Claude creates `thoughts/shared/plans/profile-undefined-bug.md`:
@@ -248,7 +248,7 @@ Claude creates `thoughts/shared/plans/profile-undefined-bug.md`:
 ### 3. Implement
 
 ```
-You: /project:implement thoughts/shared/plans/profile-undefined-bug.md
+You: /implement thoughts/shared/plans/profile-undefined-bug.md
      Note: Use "Set your name" as fallback text, not "Anonymous"
 ```
 
