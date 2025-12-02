@@ -29,7 +29,7 @@ Open `CLAUDE.md` and edit **only the Project Config section** at the top:
 name: your-project-name
 stack: TypeScript, Next.js 14, Tailwind, PostgreSQL
 language: TypeScript (strict)
-package_manager: pnpm
+package_manager: bun
 test_framework: Vitest
 ```
 
@@ -37,14 +37,14 @@ Update the **Commands table**:
 
 | Task | Command |
 |------|---------|
-| Install | `pnpm install` |
-| Dev | `pnpm dev` |
-| Build | `pnpm build` |
-| Lint | `pnpm lint` |
-| Typecheck | `pnpm typecheck` |
-| Test (all) | `pnpm test` |
-| Test (unit) | `pnpm test:unit` |
-| Test (single) | `pnpm test -- -t "test name"` |
+| Install | `bun install` |
+| Dev | `bun dev` |
+| Build | `bun build` |
+| Lint | `bun lint` |
+| Typecheck | `bun typecheck` |
+| Test (all) | `bun test` |
+| Test (unit) | `bun test:unit` |
+| Test (single) | `bun test -- -t "test name"` |
 
 Update the **File Structure** diagram to match your project layout.
 
@@ -122,12 +122,12 @@ Full workflow:
 
 | Situation | Start With |
 |-----------|------------|
-| Bug in code you wrote yesterday | `/project:plan` |
-| Bug in unfamiliar part of codebase | `/project:research` |
-| New feature, clear requirements | `/project:plan` |
-| New feature, unclear scope | `/project:research` |
-| Refactor with known files | `/project:plan` |
-| "Why does X happen?" | `/project:research` |
+| Bug in code you wrote yesterday | `/plan` |
+| Bug in unfamiliar part of codebase | `/research` |
+| New feature, clear requirements | `/plan` |
+| New feature, unclear scope | `/research` |
+| Refactor with known files | `/plan` |
+| "Why does X happen?" | `/research` |
 
 ---
 
